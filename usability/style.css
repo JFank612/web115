@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: bisque;
+}
+
+header {
+    font-family: 'playfair display', serif;
+    font-size: 1.7em;
+    color: crimson;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'PT Mono', monospace;
+}
+
+main {
+    border-bottom: 4px solid;
+    border-bottom-color: darkgoldenrod;
+    max-width: 90%;
+    margin: 5px 10px;
+    padding: 10px;
+    
+}
+.container {}
+h1, h3 {text-align: center; font-size: }
