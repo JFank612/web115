@@ -1,0 +1,47 @@
+body {
+    background: #CCEBBC;
+}
+
+.container {
+    background: whitesmoke;
+    max-width: 1060px;
+    margin: 5px auto;
+    padding: 10px;
+    border: solid;
+    border-color: #0D523D;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #041D37;
+    font-family: serif;
+}
+
+header {
+    background: #468C77;
+    max-width: 80%;
+    margin: 2px auto;
+    border-radius: 5px;
+    border: solid;
+    border-color: darkblue;
+    text-align: center;
+}
+
+main {
+    max-width: 80%;
+    margin: 2px auto;
+}
+
+a {
+    color: #7089A4;
+    font-weight: 800;
+    border: solid;
+    border-color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background: black;
+    color: white;
+    text-decoration: underline;
+}
