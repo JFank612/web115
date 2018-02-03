@@ -1,0 +1,72 @@
+body {
+    background: black;
+    font-family: sans-serif;
+}
+
+/*typed in bg for background and then hit tab.*/
+
+.container {
+    max-width: 1060px;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+header {
+    max-width: auto;
+    margin: 5px:auto;
+    text-align: center;
+    border: 10px solid darkgoldenrod;
+}
+
+footer {
+    text-align: center;
+    color: crimson;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 3.6em;
+    color: yellow;
+}
+
+h2 {
+    font-family: inherit;
+    font-size: 2.3em;
+    color: firebrick;
+}
+
+h3 {
+    font-family: inherit;
+    font-size: 1.9em;
+    color: gold;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 1.3em;
+}
+
+section {
+    max-width: 85%;
+    text-align: left;
+    margin: 10px 20px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+img {
+    padding: 5px;
+    border: 2px;
+    margin: 5px;
+    width: 30%;
+    height: auto;
+}
+
+ul {
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+.grid {
+    width: 45%;
+    font-size: 1em;
+}

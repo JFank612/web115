@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<!--entered !, and then hit tab to layout html format-->
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Emmet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Emmet Sample Page</h1>
+    </header>
+    <!-- For my main section, I entered .container>main>h2+p*3>lorem to create it -->
+    <div class="container">
+        <h2 style="border-bottom: 2px solid whitesmoke;">Lorem Ipsum</h2>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi provident nobis ab esse molestias ipsa aliquid tenetur ducimus, praesentium quis dolores officiis dolorem quibusdam blanditiis maxime in natus quos excepturi.</p>
+            <p>Quidem quam deserunt officia consectetur, consequatur rem ad nihil eum. Id hic libero voluptatum, eum vel aut, illum, expedita officia optio sint perferendis consequuntur adipisci ab esse facere deserunt impedit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sequi, nemo quos molestiae, dolorem quaerat veniam nobis beatae incidunt neque qui accusamus soluta, quo odio inventore? Et id blanditiis, accusantium.</p>
+            <!-- For my sample photos, I entered h3+(a>img)*2 -->
+            <h3>Sample Photos</h3>
+            <a href="https://www.shutterstock.com/image-photo/beautiful-retro-luxury-light-lamp-decor-279671069?src=JAw83HycAck7Y9eE-3srzw-1-6"><img src="stocklightphoto.jpg" alt="sample photo"></a>
+            <a href="https://www.shutterstock.com/image-photo/hipster-young-girl-backpack-enjoying-sunset-458190886?src=ZJVEtV9ZGuasgqrnNbj6XQ-1-6"><img src="stocktravelphoto.jpg" alt="sample photo"></a>
+        </section>
+        <!-- entered section>ul>(li>{number$})*9 to create my list -->
+        <section>
+            <ul>
+                <li>number1</li>
+                <li>number2</li>
+                <li>number3</li>
+                <li>number4</li>
+                <li>number5</li>
+                <li>number6</li>
+                <li>number7</li>
+                <li>number8</li>
+                <li>number9</li>
+            </ul>
+            <!-- entered div.grid>img*3 to form my grid -->
+            <div class="grid">
+                <img src="loremIpsum.jpg" alt="shutterstocksample">
+                <img src="loremIpsum.jpg" alt="shutterstocksample">
+                <img src="loremIpsum.jpg" alt="shutterstocksample">
+            </div>
+        </section>
+        <footer>
+            <a href="#">top</a>
+        </footer>
+    </div>
+</body>
+
+</html>
