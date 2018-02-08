@@ -1,0 +1,123 @@
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #423930
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 30px;
+    padding: 30px;
+    background-color: #FF9E00;
+}
+
+header {
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+    font-size: 3.2em;
+    color: #F4FE00;
+    font-family: 'Josefin Slab', serif;
+    text-decoration-line: underline;
+    text-decoration-color: #F4FE00;
+}
+
+h2,
+h3 {
+    text-align: left;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.9em;
+}
+
+img {
+    max-width: 200px;
+}
+
+#motion {
+    min-height: 500px;
+}
+
+#delayed {
+    min-height: 500px;
+}
+
+#reversed {
+    min-height: 500px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    -webkit-animation-name: circle-move;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s;
+    /* Chrome, Safari, Opera */
+    animation-name: circle-move;
+    animation-duration: 8s;
+    animation-iteration-count: 4;
+}
+
+.delay {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    -webkit-animation-name: circle-move;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s;
+    /* Chrome, Safari, Opera */
+    animation-name: circle-move;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+.reverse {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    -webkit-animation-name: circle-move;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s;
+    /* Chrome, Safari, Opera */
+    animation-name: circle-move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes circle-move {
+    0% {
+        left: 100px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        left: 200px;
+        top: 100px;
+    }
+
+    75% {
+        left: 100px;
+        top: 100px;
+    }
+
+    100% {
+        left: 100px;
+        top: 0px;
+    }
