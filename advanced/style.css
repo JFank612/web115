@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+#index {
+    background: url(coffeepour.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Photo by Chevanon Photography from Pexels */
+
+#menu {
+    background: url(coffee.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Photo by Tirachard Kumtanom from Pexels */
+
+#contact {
+    background: url(sipping.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    font-size: 1.7em;
+    text-align: center;
+    margin: 25px 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+a {
+    color: mediumaquamarine;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3em;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    transition: width 2s;
+}
+
+a:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+    text-decoration-color: dodgerblue;
+    font-size: 2.2em;
+}
+
+a:visited {
+    color:lightcoral;
+    text-decoration: underline;
+    text-decoration-color: lightcoral;
+}
+
+header {
+    font-family: 'Lobster', cursive;
+    font-size: 4.7em;
+    font-weight: bold;
+    color: azure;
+    text-align: center;
+    text-shadow: 2px 2px 4px darkkhaki, 0 0 25px antiquewhite;
+}
+
+footer {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.8em;
+    font-weight: 800;
+    color: crimson;
+    text-align: center;
+    margin: 200px 25px;
+}
+
+main {
+    padding: 50px;
+    margin: 100px 200px;
+    min-width: 1060px;
+    max-height: auto;
+    color: floralwhite;
+    word-wrap: break-word;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.7em;
+    color: black;
+    text-shadow: 4px 4px 6px #75A48B, 2px 2px 25px white;
+}
+
+p {
+    text-align: left;
+    font-size: 1.7em;
+    color: floralwhite;
+    text-shadow: 1px 1px 2px black;
+}
+
+.column {
+    color: floralwhite;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 50px;
+    -moz-column-width: 50px;
+    column-width: 50px;
+    -webkit-column-gap: 1px;
+    -moz-column-gap: 1px;
+    column-gap: 1px;
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+    -webkit-column-span: 1;
+    -moz-column-span: 1;
+    column-span: 1;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+    /* For tablets and large phones: */
+    background-color: green;
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    /* For Desktop */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
