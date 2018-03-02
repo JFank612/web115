@@ -1,0 +1,24 @@
+/* Scss Document */
+//Fonts
+$PT-serif: 'PT Serif',
+serif;
+$Krona-one: 'Krona One',
+sans-serif;
+$Alfa-Slab-one: 'Alfa Slab One',
+cursive;
+
+header {
+    font-family: $Alfa-Slab-one;
+    color: $red;
+	font-size: 3.8em;
+	text-align: center;
+}
+
+h1,
+h2 {
+    font-family: $PT-serif;
+    color: $blue;
+	font-size: 2.3em;
+	font-weight: 800;
+}
+p {font-size: 1.4em;}

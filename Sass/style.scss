@@ -1,0 +1,95 @@
+//import
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Krona+One|PT+Serif');
+@import 'normalize.css';
+	
+//Variables
+$lightgreen: #6FEDB7;
+$lightyellow: #EAF27C;
+$lightgrey: #D7CDCC;
+$blue: #140D4F;
+$red: #832232;
+
+//Fonts
+$PT-serif: 'PT Serif',
+serif;
+$Krona-one: 'Krona One',
+sans-serif;
+$Alfa-Slab-one: 'Alfa Slab One',
+cursive;
+
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    font-family: $Alfa-Slab-one;
+    color: $red;
+	font-size: 3.8em;
+	text-align: center;
+}
+
+h1,
+h2 {
+    font-family: $PT-serif;
+    color: $blue;
+	font-size: 2.3em;
+	font-weight: 800;
+}
+
+footer {position:fixed;
+		bottom: 0;
+		width: 95%;
+		text-align: center;
+		font-size: 1.4em;}
+
+p {font-size: 1.4em;
+   word-wrap: break-word;}
+
+nav {text-align: center;
+	 margin: 10px 20px;
+	padding: 10px;
+    a {
+        font-family: $PT-serif;
+		text-align: center;
+		border: thin;
+		border-color: black;
+		padding: 10px 20px;
+		margin:10px;
+		font-size: 1.6em;
+    
+	&:hover {text-decoration: underline;
+			 color:$red;}
+	&:visited {text-decoration: underline;
+		color:fuchsia;}}
+}
+
+ul {text-align: center;
+	margin: 5px; 
+	padding: 15px 20px;}
+
+li {display: inline-block; 
+	max-width: 30%; }
+
+img {width: 450px; 
+	 height: auto;
+	 margin: 5px 10px;   
+	 box-sizing: border-box;
+     float:left;}
+
+.container {max-width: 95%;
+		    min-height: auto;
+			margin: 20px 30px;
+			padding: 10px;}
+
+.aside {max-width: 40%;
+        float: left;}
+
+article {max-width: auto;}
+
+
+
+//styles
+body {
+    background: $lightgrey;
+}
