@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+</head>
+
+<body>
+    <header>Javascript</header>
+    <div class="container">
+        <h1>Using Javascript for thumbnails</h1>
+
+        <p>Here is my use of Javascript with 6 random pictures I chose. I did the same thing as you with the different sized pictures to show the differnce in height. I had problems creating an external javascript sheet because it told me the document wasn't defined, so I simplified it into my html.</p>
+    </div>
+            <script>
+            function change01() {
+                document.getElementById("large").src = "IMG_20151107_110755508.jpg";
+            }
+
+            function change02() {
+                document.getElementById("large").src = "IMG_20160525_185309685.jpg";
+            }
+
+            function change03() {
+                document.getElementById("large").src = "IMG_20160625_155651026_HDR.jpg";
+            }
+
+            function change04() {
+                document.getElementById("large").src = "IMG_20160813_122053579_TOP.jpg";
+            }
+
+            function change05() {
+                document.getElementById("large").src = "IMG_20160930_150132692.jpg";
+            }
+
+            function change06() {
+                document.getElementById("large").src = "IMG_20170409_105442992.jpg";
+            }
+
+        </script>
+        <div class="left">
+            <a href="#large"><img src="IMG_20151107_110755508.jpg" alt="My girlfriend and I in minnesota" height="125" title="My girlfriend and I in minnesota" onclick="change01()"> </a>
+            <a href="#large"><img src="IMG_20160525_185309685.jpg" alt="Rainbow over apartment" height="125" title="Rainbow over apartment" onclick="change02()"></a>
+            <a href="#large"><img src="IMG_20160625_155651026_HDR.jpg" alt="brewery sign" height="125" title="brewery sign" onclick="change03()"></a>
+            <a href="#large"><img src="IMG_20160813_122053579_TOP.jpg" alt="Madison square signs" height="125" title="Madison square signs" onclick="change04()"></a>
+            <a href="#large"><img src="IMG_20160930_150132692.jpg" alt="My dogs laying together" height="125" title="My dogs laying together" onclick="change05()"></a>
+            <a href="#large"><img src="IMG_20170409_105442992.jpg" alt="famous MLK motel in Memphis" height="125" title="famous MLK motel in Memphis" onclick="change06()"></a>
+        </div>
+        <div class="right">
+            <img id="large" src="IMG_20151107_110755508.jpg" alt="My dog Riley at the vet">
+        </div>
+
+</body>
+
+</html>
