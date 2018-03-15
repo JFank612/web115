@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+    font-family: 'Crete Round', serif;
+}
+
+h1,
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    color: firebrick;
+}
+
+
+.container {
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 90%;
+    height: auto;
+}
+
+nav {
+    margin: 5px 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+a {
+    font-size: 2.1em;
+    padding: 5px;
+    margin: 10px 5px;
+    color: darkblue;
+}
+
+header {
+    text-align: center;
+    font-family: fantasy, 'abril fatface';
+    color: darkgoldenrod;
+    font-size: 2.7em;
+}
+
+footer {
+    text-align: center;
+    font-family: monospace, 'VT323';
+    color: deepskyblue;
+    font-size: 1.4em;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+img {
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-auto {
+    width: 100px;
+    height: 100px;
+    flex: auto;
+
+}
+
+.box-zero {
+    width: 100px;
+    height: 100px;
+    flex: none;
+
+}
+
+.title {
+    height: 40px;
+    text-align: left;
+}
+
+#column {
+    display: flex;
+    width: 250px;
+    height: 650px;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: space-around;
+
+
+}
+
+#reverse-column {
+    display: flex;
+    max-width: 450px;
+    height: auto;
+    flex-flow: column-reverse;
+    align-items: stretch;
+    justify-content: space-around;
+
+}
+
+#row {
+    display: flex;
+    width: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#reverse-row {
+    display: flex;
+    width: 300px;
+    height: 600px;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+}
+
+#large {
+    width: 65%;
+    height: auto;
+}
+
+.left {
+    width: 20%;
+    float: left;
+    min-height: auto;
+}
+
+.right {
+    width: 70%;
+    float: right;
+    min-height: 600px;
+}
+
+.left-2 {
+    width: 70%;
+    float: left;
+    min-height: 600px;
+}
+
+.right-2 {
+    width: 20%;
+    float: right;
+    min-height: auto;
+}
+
+.top {
+    width: 100%;
+    min-height: 300px;
+    ;
+}
+
+.bottom {
+    width: 100%;
+    min-height: 700px;
+    align-content: center;
+}
+
+.left img,
+.right img {
+    margin: 10px auto;
+}
