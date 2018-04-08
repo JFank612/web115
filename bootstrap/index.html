@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap and links</title>
+    <title>Health Tutorial</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -12,32 +12,61 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Domine%7CJosefin+Sans%7CKalam%7CLimelight%7COxygen+Mono" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="healthy lifestyle">
+    <meta property="og:image" content="http://jfankhauser.mccdgm.net/web115/bootstrap/project/Healthy-Lifestyle-tips.jpg">
+    <meta property="og:description" content="Tutorial of healthy living">
+    <meta property="og:url" content="http://jfankhauser.mccdgm.net/web115/bootstrap/project/index.html">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo%7CCutive+Mono%7CGravitas+One%7CItim%7CMontserrat%7CVast+Shadow" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>Bootstrap and links</header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+                <a class="navbar-brand" href="#">Navigation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a style="background-color: black" href="page2.html">Learning</a></li>
+                    <li><a style="background-color: black" href="page3.html">Diets</a></li>
+                    <li><a style="background-color: black" href="page4.html">Exercises</a></li>
+                    <li><a style="background-color: black" href="page5.html">Planning</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>Health and Wellness</header>
     <div>
-        <h1>links to all other projects</h1>
-        <nav><a href="../advanced/index.html">advanced</a>
-            <a href="../animation/index.html">animation</a>
-            <a href="../emmet/index.html">emmet</a>
-            <a href="../flexbox/index.html">flexbox</a>
-            <a href="../imageproject/index.php">php project</a>
-            <a href="../index/index.html">index page</a>
-            <a href="../javascript/index.html">javascript</a>
-            <a href="../php/index.php">PHP</a>
-            <a href="../sass/scss/index.html">SASS</a>
-            <a href="grid.html">Grids</a></nav>
-    </div>
-    <div class="container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, consectetur, minima! Fugit non ipsam, dolorum sequi consequatur reprehenderit inventore qui vitae temporibus laboriosam. Molestias, aspernatur accusamus odit eveniet laboriosam beatae.</p>
-    <p>Est odit voluptatum molestias nihil velit necessitatibus dolorum quas laboriosam quae, aperiam, esse earum in vel soluta eaque ab magnam dolore, enim nesciunt! Illum alias incidunt corrupti enim, nobis, distinctio.</p>
-    <p>Repudiandae excepturi sapiente ipsa praesentium esse similique tenetur culpa, temporibus vel nobis, corrupti, dicta minus facere ab ipsum eos rem quos officiis soluta id aspernatur. Fuga ipsum eligendi id, aperiam.</p>
+        <div class="container">
+            <div>
+                <h1>Living a healthy lifestyle</h1>
+                <img class="img-rounded" style="float: left" src="healthy-living.jpg" alt="Cycle of Health" width="450" height="400"><img class="img-rounded" style="float: right" src="Healthy-Lifestyle-tips.jpg" alt="Love yourself and your health" width="450" height="400">
+            </div>
 
+            <p style="clear: both" class="lead">In life, it is known that if you want to live a longer life, you must practice a health lifestyle. The problem with the perfect health lifestyle that everyone wishes to live, is that it is not the easiest thing to maintain. For some people, its just not finding the right balance in your nutritional intake, while others have issues with the physical exercises needed. Also, another problem some people face, is their family issues and conditions that could restrict them from certain things in their lifestyles.  </p>
+        </div>
     </div>
+         <footer>
+            <ul class="pager">
+                <li class="previous disabled"><a style="color: #000000" href="#">Previous<span class="glyphicon glyphicon-ban-circle"></span></a></li>
+                <li><a href="#">Top</a></li>
+                <li class="next"><a href="page2.html">Next</a></li>
+            </ul>
+        </footer>
 
 </body>
 
