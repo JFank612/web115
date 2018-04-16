@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo|Cutive+Mono|Fjalla+One|Gugi");
+header {
+  font-size: 4.6em;
+  font-family: "Gugi", cursive;
+  color: #FF5729; }
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Fjalla One", sans-serif;
+  color: #009494; }
+
+body {
+  background-color: #454445;
+  font-family: "Arvo", serif; }
+
+p {
+  color: #F5F2DC; }

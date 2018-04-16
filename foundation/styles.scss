@@ -1,0 +1,27 @@
+//import
+
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Cutive+Mono|Fjalla+One|Gugi');
+
+//Variables
+$darkgray: #454445;
+$darkbluegreen: #00585E;
+$lightbluegreen: #009494;
+$white: #F5F2DC;
+$orange: #FF5729;
+
+//fonts
+$serif: 'Arvo', serif;
+$sansserif: 'Fjalla One', sans-serif;
+$monospace: 'Cutive Mono', monospace;
+$display: 'Gugi', cursive;
+
+header {font-size: 4.6em; 
+	    font-family: $display; 
+	    color: $orange;}
+h1 {font-size: 2.5em;
+	font-family: $sansserif;
+	color: $lightbluegreen;}
+body {background-color: $darkgray;
+	  font-family: $serif;}
+p {color: $white;}
