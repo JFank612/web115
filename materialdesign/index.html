@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-yellow.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="dialog-polyfill.css" rel="stylesheet">
+    <script src="dialog-polyfill.js"></script>
+
+
+    <meta property="og:title" content="Happyvilles Events">
+    <meta property="og:url" content="http://jfankhauser.mccdgm.net/web115/materialdesign/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Events of the town">
+    <meta property="og:image" content="https://oneclassblog.com/wp-content/uploads/2018/01/events.jpg">
+</head>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Events</span>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#event1">Beerfest</a>
+                <a class="mdl-navigation__link" href="#event2">Movie in the Park</a>
+                <a class="mdl-navigation__link" href="#event3">Petting Zoo</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content container">
+            <div class="page-content">
+               <img src="events.jpg" alt="events">
+                <h1>Happyville's List</h1>
+                <ul>
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+      
+      <span>Beerfest</span>
+                        <span class="mdl-list__item-sub-title">May 4th</span>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+      
+      <span>Movie in the Park</span>
+                        <span class="mdl-list__item-sub-title">May 6th</span>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+      
+      <span>Petting Zoo</span>
+                        <span class="mdl-list__item-sub-title">May 9th</span>
+                        </span>
+                    </li>
+
+                </ul>
+
+
+                <h3 id="event1">BeerFest</h3>
+                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect show-modal">Age Requirement</button>
+                <dialog class="mdl-dialog mdl-dialog-polyfill">
+                    <div class="mdl-dialog__content">
+                        <p>
+                            Are you 21 years of Age?
+                        </p>
+                    </div>
+                    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+                        <button type="button" class="mdl-button close">Yes</button>
+                        <button type="button" class="mdl-button">No</button>
+                    </div>
+                </dialog>
+                <script>
+                    var dialog = document.querySelector('dialog');
+                    var showModalButton = document.querySelector('.show-modal');
+                    if (!dialog.showModal) {
+                        dialogPolyfill.registerDialog(dialog);
+                    }
+                    showModalButton.addEventListener('click', function() {
+                        dialog.showModal();
+                    });
+                    dialog.querySelector('.close').addEventListener('click', function() {
+                        dialog.close();
+                    });
+                    var dialog = document.querySelector('dialog');
+                    dialogPolyfill.registerDialog(dialog);
+                    document.querySelector('#show').onclick = function() {
+                        dialog.show();
+                    };
+                    document.querySelector('#close').onclick = function() {
+                        dialog.close();
+                    };
+
+                </script>
+                <p>Here on May 4, we will be hosting a beerfest for all you craft beer lovers. The event is located in the park and will run from 3pm till 7:30pm. We will have many different breweries with many different types of their beer here with them. </p>
+                <p>There will be a limited amount of tickets sold, so you will want to buy your tickets ASAP. We have three different types of tickets being sold. Our first set of tickets will the General Admission tickets for those who just to come and enjoy the brew. The next set of tickets will be the VIP deal which gets you in one-hour earlier and will get you first in line for the early tappings of the beer available. The final set of tickets will be for the designated drivers, which will give you a red armband that indicates you will the designated driver for the event and will limit you to only two beverages. </p>
+                <p style="font-weight: bolder; color: red"><strong>For anyone that will be attending the event, you must have a ride set up for you outside of it. There will be police setup outside of the event monitoring everyone leaving.</strong></p>
+                <h5>For tickets, enter number needed and you will be redirected to the checkout webpage</h5>
+                <ul>
+                    <li>General Admission - $50</li>
+                    <li>VIP - $75</li>
+                    <li>Designated Driver - $25</li>
+                </ul>
+                <h6>General Admission</h6>
+                <!-- Numeric Textfield with Floating Label -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                        <label class="mdl-textfield__label" for="sample4">Number of tickets</label>
+                        <span class="mdl-textfield__error">Error</span>
+                    </div>
+                </form>
+                <h6>VIP</h6>
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample5">
+                        <label class="mdl-textfield__label" for="sample5">Number of tickets</label>
+                        <span class="mdl-textfield__error">Error</span>
+                    </div>
+                </form>
+                <h6>Designated Driver</h6>
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample6">
+                        <label class="mdl-textfield__label" for="sample6">Number of tickets</label>
+                        <span class="mdl-textfield__error">Error</span>
+                    </div>
+                </form>
+                <!-- Colored raised button -->
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Checkout
+</button>
+
+                <h3 id="event2">Movie in the Park</h3>
+                <h4>New tradition</h4>
+                <p>Starting the first weekend of May, we will be presenting a movie in the park at 5:30pm, and will run till the end of the summer on every Sunday. Every movie presented will be a family-friendly movie for everyone to enjoy. For our first movie ever, we will be showing the movie Shrek. After this first weeek we will be having a vote on the choice of movie then. We hope to have a good turn out for these showing and that everyone enjoys it!</p>
+                <h5>Vote Here...</h5>
+                <label class="mdl-js-ripple-effect" for="radio1">
+                     <input type="radio" id="radio1" class="mdl-radio__button" name="options" value="1" checked>
+  <span class="mdl-radio__label">Shrek 2</span>
+                </label>
+                <label class="mdl-js-ripple-effect" for="radio2">
+                     <input type="radio" id="radio2" class="mdl-radio__button" name="options" value="1" checked>
+  <span class="mdl-radio__label">Finding Nemo</span>
+                </label>
+                <label class="mdl-js-ripple-effect" for="radio3">
+                     <input type="radio" id="radio3" class="mdl-radio__button" name="options" value="1" checked>
+  <span class="mdl-radio__label">Beauty and the Beast</span>
+                </label>
+                <label class="mdl-js-ripple-effect" for="radio4">
+                     <input type="radio" id="radio4" class="mdl-radio__button" name="options" value="1" checked>
+  <span class="mdl-radio__label">Jungle Book</span>
+                </label>
+                <h3 id="event3">Petting Zoo</h3>
+                <h5>Mr. Jones Travelling Petting Zoo</h5>
+                <p>On Wednesday, May 9th, we will be hosting a petting zoo for all the kids. It will be set up at the fairgrounds and will go from noon to 3pm. There will be many different pens for all the different animals, The list on animals will consist of:</p>
+                <ul>
+                    <li>Pigs</li>
+                    <li>Goats</li>
+                    <li>Llamas</li>
+                    <li>Chickens and roosters</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+
+
+</body>
+
+</html>
